@@ -1,0 +1,55 @@
+/* Style for the body element */
+body {
+    font-family: Arial, sans-serif; /* Set the font */
+    background-color: #f4f4f4; /* Set the background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for all headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Set text color */
+    font-weight: bold; /* Set font weight */
+}
+
+/* Style for links */
+a {
+    color: #007BFF; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Style for a class called .highlight */
+.highlight {
+    background-color: yellow; /* Set background color to yellow */
+}
+
+/* Style for an ID called #mainContent */
+#mainContent {
+    width: 75%; /* Set width to 75% */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add padding of 20px */
+    background-color: #fff; /* Set background color to white */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Add a slight shadow */
+}
+
+/* style for resume button */
+.resume-button {
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: #2C3E50; /* Button color */
+    color: #fff; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #34495E; /* Darken button color on hover */
+}

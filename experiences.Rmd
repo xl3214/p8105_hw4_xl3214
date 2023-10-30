@@ -1,0 +1,27 @@
+---
+title: "Academic & Professional Experiences"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+    css: styles.css
+---
+
+<a href="./Lu_Xuan_Resume.pdf" class="resume-button" target="_blank">View My Resume</a>
+
+Hello, I'm Xuan Lu, a second-year MPH student in Epidemiology at Columbia University's Mailman School of Public Health, specializing in Applied Biostatistics. I hold a BS degree in Psychology with a Life Sciences option from The Pennsylvania State University. Below summarizes my past academic and professional experiences. If you have any questions, feel free to [email me](xl3214@cumc.columbia.edu).
+
+## Education
+
+My education has not just been about accruing degrees, but rather laying down a robust foundation in the multifaceted domain of public health. My academic pursuits encompass a spectrum: from epidemiological research methods and observational study designs to both quantitative and qualitative research techniques. The nuances of statistical analysis, data management, and a distinct proficiency in the R programming language are areas I pride myself on, thanks to the rigorous academic environment.
+
+## Early Research Endeavors
+
+Before setting foot into the world-renowned halls of Columbia, I had already ventured into the challenging realm of healthcare research. At the Peking University Institute of Mental Health, I served as a research assistant, privileged to work under the mentorship of Dr. Weihua Yue, the institute's deputy director. During this phase, I plunged into significant projects, the most notable being the "Antipsychotic-induced Weight Gain Genome-wide Association Study and Mendelian Randomization." My roles varied and enriched me - from conducting clinical interviews and reviewing extensive literature to managing data collection, analysis, and dissemination through scholarly writings. Engaging with diverse clinical patients offered profound insights, solidifying my commitment to healthcare.
+
+## Real-World Applications
+
+My analytical journey saw another milestone during my recent internship with Dr. Alaei at the Institute for International Health and Education. Entrusted with a large-scale national health database in Tajikistan, I navigated through over 15,000 observations and 280 variables. This wasn't just about numbers but about translating theoretical knowledge to practical applications. My responsibilities extended from absorbing academic writings on HIV/AIDS to ensuring the integrity of data translation, cleaning, and rigorous analysis. It was an affirmation of the critical role of precision and attention to detail in policymaking.
+
+In the dynamic landscape of healthcare, challenges emerge at every step. However, with a foundation rooted in rigorous academic training and real-world research experiences, I am eager to bring about innovative, research-driven solutions. I view every challenge as an opportunity to learn, grow, and contribute meaningfully to this ever-evolving field.
