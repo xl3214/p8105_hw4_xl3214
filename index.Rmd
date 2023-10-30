@@ -6,12 +6,12 @@ output:
     css: styles.css
 ---
 
-[About](about.html) | 
+[Home](index.html) | 
 [Academic and Professional Experiences](experiences.html) | 
-[GitHub Projects](github_projects.html) | 
+[GitHub Projects](github_projects.html)
 
 # Welcome!
 
 Hello and welcome to my personal website. My name is Xuan Lu, I am in my final year concluding towards a Master of Public Health in Epidemiology at Columbia University Mailman School of Public Health. Previously, I obtained my B.S. in Psychology, Life Science option from Pennsylvania State University. 
 
-Here you'll find various projects, thoughts, and explorations in my professional and personal journey. Please feel free to navigate the site through links above. If you have any questions, feel free to [email me](xl3214@cumc.columbia.edu). 
+Here you'll find various projects, thoughts, and explorations in my professional and personal journey. Please feel free to navigate the site through links above. If you have any questions, [shoot me an email](xl3214@cumc.columbia.edu). 
