@@ -1,0 +1,12 @@
+---
+title: "Xuan Lu's Personal Website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+[about](about.html)
+
+
