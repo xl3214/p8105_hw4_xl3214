@@ -12,7 +12,7 @@ output:
 
 ## Flexdashboard
 
-```{r setup, message=FALSE}
+```{r setup, message = FALSE, echo = FALSE}
 library(flexdashboard)
 library(plotly)
 library(p8105.datasets)
@@ -23,27 +23,81 @@ instacart <- p8105.datasets::instacart
 # Randomly sample 500 rows for visualization purposes
 set.seed(123) # for reproducibility
 instacart_sample <- sample_n(instacart, 500)
+```
 
-# Scatter plot of order_hour_of_day vs. order_number
-plot_ly(instacart_sample, x = ~order_hour_of_day, y = ~order_number, 
-        mode = "markers", type = 'scatter', text = ~product_name) |>
-  layout(title = "Order Hour of Day vs. Order Number")
+### Line plot of orders over days
 
+```{r line plot, message = FALSE, warning = FALSE, echo = FALSE}
 # Line plot of orders over days
 orders_by_day <- instacart |>
+  mutate(order_dow = factor(order_dow, 
+                            levels = 0:6, 
+                            labels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"), 
+                            ordered = TRUE)) |>
   group_by(order_dow) |>
   summarise(num_orders = n())
 
-plot_ly(orders_by_day, x = ~order_dow, y = ~num_orders, mode = 'lines', type = 'scatter') |>
-  layout(title = "Orders Over Days of the Week")
+plot_ly(orders_by_day, 
+        x = ~order_dow, 
+        y = ~num_orders, mode = 'lines', type = 'scatter', 
+        color = 'rgba(220, 20, 60, 0.6)',
+        marker = list(size = 10, color = 'rgba(220, 20, 60, 0.6)')) |>
+  layout(title = "Orders Over Days of the Week", 
+         xaxis = list(title = 'Days of the Week'),
+         yaxis = list(title = 'Number of Items Purchased'),
+         margin = list(l = 100))
+```
 
-# Top 10 most frequently ordered products
-top_products <- instacart |>
-  group_by(product_name) |> 
-  summarise(count = n()) |> 
-  arrange(-count) |> 
-  head(10)
+### Bar plot of orders by department over days of week
 
-plot_ly(top_products, x = ~product_name, y = ~count, type = 'bar') |>
-  layout(title = "Top 10 Most Ordered Products")
+```{r barplot, message = FALSE, warning = FALSE, echo = FALSE}
+# Bar plot of orders by department over days of week
+department_for_plot <- instacart |> 
+  mutate(order_dow = factor(order_dow, 
+                            levels = 0:6, 
+                            labels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"), 
+                            ordered = TRUE)) |>
+  group_by(department, order_dow) |>
+  tally()
+
+plot_ly(data = department_for_plot,
+        x = ~n,
+        y = ~department,
+        color = ~as.factor(order_dow),
+        type = 'bar',
+        orientation = 'h') |>
+  layout(title = "Department Barplot",
+         xaxis = list(title = "Number of Items Purchased"),
+         yaxis = list(title = "Department"),
+         barmode = 'stack', 
+         legend = list(title = list(text = '<b>Days of the Week</b>')))
+```
+
+### Scatter plot of orders by aisle over days of week
+
+```{r Scatter, message = FALSE, warning = FALSE, echo = FALSE}
+# Scatter plot of the number of items ordered in each aisle
+aisle_for_plot <- instacart |> 
+  mutate(order_dow = factor(order_dow, 
+                            levels = 0:6, 
+                            labels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"), 
+                            ordered = TRUE)) |>
+  group_by(aisle, order_dow) |>
+  summarize(n_obs = n())
+
+aisle_for_plot |>
+  plot_ly(
+    x = ~n_obs,
+    y = ~aisle,
+    color = ~as.factor(order_dow),
+    type = 'scatter',
+    mode = 'markers',
+    marker = list(size = 10)
+  ) |>
+  layout(
+    title = "Aisle Scatterplot",
+    xaxis = list(title = 'Number of Items Purchased'),
+    yaxis = list(title = 'Aisle'),
+    margin = list(l = 100), 
+    legend = list(title = list(text = '<b>Days of the Week</b>')))
 ```
