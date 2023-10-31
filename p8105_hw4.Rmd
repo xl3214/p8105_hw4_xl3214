@@ -20,12 +20,13 @@ library(dplyr)
 
 instacart <- p8105.datasets::instacart
 
-# Randomly sample 1000 rows for visualization purposes
+# Randomly sample 500 rows for visualization purposes
 set.seed(123) # for reproducibility
-instacart_sample <- sample_n(instacart, 1000)
+instacart_sample <- sample_n(instacart, 500)
 
 # Scatter plot of order_hour_of_day vs. order_number
-plot_ly(instacart_sample, x = ~order_hour_of_day, y = ~order_number, mode = "markers", type = 'scatter', text = ~product_name) |>
+plot_ly(instacart_sample, x = ~order_hour_of_day, y = ~order_number, 
+        mode = "markers", type = 'scatter', text = ~product_name) |>
   layout(title = "Order Hour of Day vs. Order Number")
 
 # Line plot of orders over days
