@@ -8,11 +8,12 @@ output:
 
 [Home](index.html) | 
 [Academic and Professional Experiences](experiences.html) | 
-[GitHub Projects](github_projects.html)
-
-<a href="./Lu_Xuan_Resume.pdf" class="resume-button" target="_blank">View My Resume</a>
+[GitHub Projects](github_projects.html) |
+[P8105 HW4](p8105_hw4.html)
 
 Hello, I'm Xuan Lu, a second-year MPH student in Epidemiology at Columbia University's Mailman School of Public Health, specializing in Applied Biostatistics. I hold a BS degree in Psychology with a Life Sciences option from The Pennsylvania State University. Below summarizes my past academic and professional experiences. If you have any questions, feel free to [email me](xl3214@cumc.columbia.edu).
+
+<a href="./Lu_Xuan_Resume.pdf" class="resume-button" target="_blank">View My Resume</a>
 
 ## Education
 

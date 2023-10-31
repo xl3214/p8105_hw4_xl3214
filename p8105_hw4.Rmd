@@ -1,0 +1,48 @@
+---
+title: "Instacart Visualization using Flexdashboard & Plotly"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+[Home](index.html) | 
+[Academic and Professional Experiences](experiences.html) | 
+[GitHub Projects](github_projects.html) |
+[P8105 HW4](p8105_hw4.html)
+
+## Flexdashboard
+
+```{r setup, message=FALSE}
+library(flexdashboard)
+library(plotly)
+library(p8105.datasets)
+library(dplyr)
+
+instacart <- p8105.datasets::instacart
+
+# Randomly sample 1000 rows for visualization purposes
+set.seed(123) # for reproducibility
+instacart_sample <- sample_n(instacart, 1000)
+
+# Scatter plot of order_hour_of_day vs. order_number
+plot_ly(instacart_sample, x = ~order_hour_of_day, y = ~order_number, mode = "markers", type = 'scatter', text = ~product_name) |>
+  layout(title = "Order Hour of Day vs. Order Number")
+
+# Line plot of orders over days
+orders_by_day <- instacart |>
+  group_by(order_dow) |>
+  summarise(num_orders = n())
+
+plot_ly(orders_by_day, x = ~order_dow, y = ~num_orders, mode = 'lines', type = 'scatter') |>
+  layout(title = "Orders Over Days of the Week")
+
+# Top 10 most frequently ordered products
+top_products <- instacart |>
+  group_by(product_name) |> 
+  summarise(count = n()) |> 
+  arrange(-count) |> 
+  head(10)
+
+plot_ly(top_products, x = ~product_name, y = ~count, type = 'bar') |>
+  layout(title = "Top 10 Most Ordered Products")
+```
