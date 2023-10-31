@@ -11,9 +11,28 @@ output:
 [GitHub Projects](github_projects.html) |
 [P8105 HW4](p8105_hw4.html)
 
+```{css, echo=FALSE}
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 200px;
+}
+```
+
+```{r, echo=FALSE, results='asis'}
+library("htmltools")
+
+div(class = "title-container",
+    img(src = "967EBE58-5D43-4FCD-930B-3EF9FA5AC3AE_1_201_a.jpeg", alt = "My Photo", class = "title-image"))
+```
+
 # Welcome!
-
-
 
 Hello and welcome to my personal website. My name is Xuan Lu, I am in my final year concluding towards a Master of Public Health in Epidemiology at Columbia University Mailman School of Public Health. Previously, I obtained my B.S. in Psychology, Life Science option from Pennsylvania State University. 
 
