@@ -43,3 +43,11 @@ For more detailed description of each project, please visit:
 ## Project 5: Flexdashboard
 
 For this project, I created a flexdashboard using a random sampling of 500 observations of the `instacart` dataset. Click [HERE](p8105_hw4.html) to view. 
+
+## Project 6: Investigating the Association Between Depression and Hypertension [(repository link)](https://github.com/xl3214/depression_hypertension.git)
+
+This is a group project for Application of Epidemiological Research Methods class. Using NHANES 2017 - 2018 data, we analyzed the crude association between binary exposure of Major Depressive Disorder and binary outcome of Hypertension with bivariate logistic regression and Pearson chi-square test. We also included potential confounding variables to assess the adjusted association with multivariable logistic regression and Mantel-Haenszel chi-square test. We calculated the odds ratio and their 95% confidence interval for both crude and adjusted association. 
+
+I was responsible for the research question conceptualization and formalization, conducting literature review, SAS programming for data cleaning, analysis, and error-checking throughout the coding and analyzing process.
+
+You may access the final project abstract [HERE](group15_final_abstract.pdf) and the SAS coding pipeline [HERE](group15_final.sas). 
