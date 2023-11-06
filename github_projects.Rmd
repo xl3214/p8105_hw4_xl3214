@@ -8,23 +8,38 @@ output:
 
 [Home](index.html) | 
 [Academic and Professional Experiences](experiences.html) | 
-[GitHub Projects](github_projects.html) |
-[P8105 HW4](p8105_hw4.html)
+[GitHub Projects](github_projects.html) 
 
-## Project 1: [Glioblastoma Multiforme (GBM) Market Analysis Repo](https://github.com/xl3214/m3_GBM_market.git)
+## Project 1: Glioblastoma Multiforme (GBM) Market Analysis [(repository link)](https://github.com/xl3214/m3_GBM_market.git)
 
-This repository is for data cleaning, tidying, and analyzing data from Glioblastoma Multiforme (GBM) patients to understanding the structure of GBM market. The purpose of this project output is to facilitate a 30-minite discussion on the GBM market. Data provided by Michael Allen Company.
+This project examines the structure of Glioblastoma Multiforme (GBM) market and existing treatment gaps using information collected from GBM patients. Data provided by Michael Allen Company. For this project, I utilized R version 4.3.1, and R packages `dplyr`, `summarytools`, `forcats`, `tidyverse`, `psych`, `broom`, `knitr`, and `ggplot2`.
 
-You can access the output of this project [Here](https://github.com/xl3214/m3_GBM_market/blob/a48e0971c2d24c84a469fdbc784a760061bf0ac5/m3_GBM_market.pdf).
+You can access the project report [Here](https://github.com/xl3214/m3_GBM_market/blob/a48e0971c2d24c84a469fdbc784a760061bf0ac5/m3_GBM_market.pdf).
 
-## Project 2: [P8105 HW3 Repo](https://github.com/xl3214/p8105_hw3_xl3214.git)
+## Project 2: NYC Zip Code Level Population Changes [(repository link)](https://github.com/xl3214/p8105_mtp_xl3214.git)
 
-This repository was part of my coursework assignment. It uses data “The Instacart Online Grocery Shopping Dataset 2017”, "Behavioral Risk Factors Surveillance System for Selected Metropolitan Area Risk Trends (SMART) for 2002-2010", and accelerometer data collected on 250 participants in the NHANES study, all of which accessed from [course file](https://p8105.com/homework_3.html). 
+This project examines NYC ZIP code-level population changes using USPS Change of Address (COA) data. You can access the project report [HERE](p8105_mtp_xl3214.html).
 
-You can access the output of this project [Here](https://github.com/xl3214/p8105_hw3_xl3214/blob/0fe03059ee6bc7484104e43385796e9857c731fe/p8105_hw3_xl3214.md).
+## Project 3: Visualization and EDA [(repository link)](https://github.com/xl3214/p8105_hw3_xl3214.git)
 
-## Project 3: [P8105 HW2 Repo](https://github.com/xl3214/p8105_hw2_xl3214.git)
+This project is broken down to three different smaller projects. It uses data “The Instacart Online Grocery Shopping Dataset 2017” or `instacart`, "Behavioral Risk Factors Surveillance System for Selected Metropolitan Area Risk Trends (SMART) for 2002-2010" or `smart`, and accelerometer data collected on 250 participants in the NHANES study or `accel`. 
 
-This repository was part of my coursework assignment. It uses data “FiveThirtyEight”, "Mr. Trash Wheel", and dataset collected in an observational study to understand the trajectory of Alzheimer’s disease (AD) biomarkers, all of which accessed from [course file](https://p8105.com/homework_2.html). 
+For more detailed description of each project, please visit: 
 
-You can access the output of this project [Here](https://github.com/xl3214/p8105_hw2_xl3214/blob/82c02a004d9c9654272fd01ef8424cf08aef26c1/p8105_hw2_xl3214.md).
+- instacart project [REPORT](instacart_eda.html)
+- smart project [REPORT](smart_eda.html)
+- accel project [REPORT](accel_eda.html)
+
+## Project 4: Data Cleaning SOP [(repository link)](https://github.com/xl3214/p8105_hw2_xl3214.git)
+
+This project is broken down to three different smaller projects. It uses data “FiveThirtyEight” or `538`, "Mr. Trash Wheel" or `trashwheel`, and dataset collected in an observational study to understand the trajectory of Alzheimer’s disease (AD) biomarkers, or `amyloid`. 
+
+For more detailed description of each project, please visit: 
+
+- 538 project [REPORT](dc_538.html)
+- trashwheel project [REPORT](dc_trashwheel.html)
+- amyloid project [REPORT](dc_amyloid.html)
+
+## Project 5: Flexdashboard
+
+For this project, I created a flexdashboard using a random sampling of 500 observations of the `instacart` dataset. Click [HERE](p8105_hw4.html) to view. 

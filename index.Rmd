@@ -8,8 +8,7 @@ output:
 
 [Home](index.html) | 
 [Academic and Professional Experiences](experiences.html) | 
-[GitHub Projects](github_projects.html) |
-[P8105 HW4](p8105_hw4.html)
+[GitHub Projects](github_projects.html)
 
 ```{css, echo=FALSE}
 .title-container {
